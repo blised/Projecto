@@ -393,6 +393,53 @@ header{
   color: var(--bg-color);
 }
 .city-name{
-  font-size: 0.93rem;
+  font-size: 0.938rem;
   color: var(--bg-color);
+}
+.reviews .heading{
+  align-items: center;
+}
+.review-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+  gap: 1.5rem;
+}
+.rev-box{
+  padding: 15px;
+  background: var(--bg-color);
+  border: 1px solid hsl(0deg 0% 54% /14%);
+}
+
+.rev-box:hover{
+  box-shadow: 0 4ox 16px rgb(0 0 0 /10%);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.rev-box .stars i{
+  font-size: 20px;
+  color: #ffc107;
+}
+.rev-box p{
+  font-size: 0.948rem;
+  margin: 1rem 0;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--third-color);
+}
+.profile .name{
+  font-size: 1rem;
+}
+.profile span{
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: var(--text-alter-color);
 }
