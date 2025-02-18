@@ -121,7 +121,9 @@ var swiper = new Swiper(".destination-container", {
 
 // Menu
 let menu = document.querySelector('.menu-icon');
+let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
+  navbar.classList.toggle("open-menu");
   menu.classList.toggle("move");
 };

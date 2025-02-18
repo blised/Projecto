@@ -464,7 +464,7 @@ header{
   font-size: 0.9rem;
 }
 .footer-box h3{
-  font-size: 1.07rem;
+  font-size: 1.075rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -505,4 +505,111 @@ header{
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--bg-color);
+}
+/* Responsive */
+@media (max-width:1064px){
+  .container{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .heading{
+    margin-bottom: 1.5rem !important;
+  }
+}
+@media (max-width:1010px){
+  .home h1{
+    font-size: 4.2rem;
+    line-height: 3rem;
+  }
+  .home-content{
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+  .home-data, .helmet-box{
+    order: 2;
+  }
+  .home-data{
+    display: flex;
+    text-align: center;
+  }
+  .border-home {
+      padding-bottom: 0px;
+      border-right: 1px solid #e1dbd2;
+      padding-right: 10px;
+      border-bottom: none;
+  }
+}
+@media (max-width:740px) {
+  .nav{
+    padding: 15px 0;
+  }
+  .home{
+    padding-top: 5rem !important; 
+  }
+  section{
+    padding: 2rem 0;
+  }
+  .sing-up{
+    display: none;
+  }
+  .mobile-sing-up{
+    display: initial;
+  }
+  .menu-icon{
+    display: flex;
+  }
+  .navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 300px;
+    background: var(--bg-color);
+    padding: 20px;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%,100% 100%);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .open-menu{
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .nav-link{
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  
+}
+@media (max-width:570px){
+  .home h1{
+    font-size: 3.2rem;
+    line-height: 2rem;
+  }
+  .heading h2{
+    font-size: 1.4rem;
+  }
+  .heading span{
+    font-size: 0.82rem;
+  }
+}
+@media (max-width:400px){
+  .home h1{
+    font-size: 2.2rem;
+    line-height: 1rem;
+  }
+  .home-data{
+    flex-direction: column;
+  }
+  .border-home{
+    padding-bottom: 10px;
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #e1dbd2;
+  }
+}
+@media (max-width:350px){
+  .navbar{
+    width: 100%;
+  }
 }
